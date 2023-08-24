@@ -1,28 +1,32 @@
-
-.Navigation{
+.navigation {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    &-Image{
+
+    &__image {
         width: 100%;
         height: 50px;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        &-Img{
+
+        &__img {
             width: 200px;
             height: 50px;
         }
     }
-    &-List{
+
+    &__list {
         background-color: white;
         height: 50px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        &-Item{
+
+        &__item {
             list-style: none;
-            &-Link{
+
+            &__link {
                 opacity: 1;
                 text-decoration: none;
                 color: black;
