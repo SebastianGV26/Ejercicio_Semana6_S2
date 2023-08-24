@@ -1,0 +1,25 @@
+.Container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 3rem;
+    &-Card{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid gray;
+        border-radius: 2rem;
+        box-shadow: 5px 5px 10px 1px gray;
+        &-Subtitulo{
+            font-size: 2rem;
+            font-weight: 900;
+            padding-bottom: 2rem;
+        }
+        &-Texto{
+            text-align: center;
+
+        }
+    }
+}

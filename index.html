@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="Navigation">
+            <div class="Navigation-Image"><img class="Navigation-Image-Img"
+                    src="data:image/png;base64,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"
+                    alt=""></div>
             <ul class="Navigation-List">
                 <li class="Navigation-List-Item"><a class="Navigation-List-Item-Link" href="#">Inicio</a></li>
                 <li class="Navigation-List-Item"><a class="Navigation-List-Item-Link" href="#">Nosotros</a></li>
                 <li class="Navigation-List-Item"><a class="Navigation-List-Item-Link" href="#">Contacto</a></li>
-                <li class="Navigation-List-Item"><a class="Navigation-List-Item-Link" href="#">Trabaja con Nosotros</a></li>
+                <li class="Navigation-List-Item"><a class="Navigation-List-Item-Link" href="#">Trabaja con Nosotros</a>
+                </li>
             </ul>
         </nav>
     </header>
+    <section class="Container">
+        <article class="Container-Card">
+            <h3 class="Container-Card-Subtitulo">
+                Carta 1
+            </h3>
+            <p class="Container-Card-Texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nihil quis saepe esse sed mollitia id odio
+                quisquam? Id fugit corrupti blanditiis aut magnam harum. Libero enim eos pariatur omnis!</p>
+        </article>
+        <article class="Container-Card">
+            <h3 class="Container-Card-Subtitulo">
+                Carta 2
+            </h3>
+            <p class="Container-Card-Texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus saepe repellat impedit? Iusto
+                asperiores magnam dicta ut rem minima reiciendis consequuntur eligendi, a est dolor ratione accusantium
+                quae maiores illo.</p>
+        </article>
+    </section>
 </body>
+
 </html>
